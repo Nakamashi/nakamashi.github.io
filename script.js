@@ -289,7 +289,7 @@ function updateCardDisplay(card) {
 
 function updateSentenceHints(phrase) {
   hintData.forEach((hint) => {
-    const phraseElement = hint.element.querySelector(".hint-phrase");
+    const phraseElement = hint.element.querySelector(".hint-card-phrase");
     phraseElement.textContent = phrase;
     hint.element.dataset.sentence = hint.buildSentence(phrase);
     setHintRevealed(hint.element, false, hint.keyword);

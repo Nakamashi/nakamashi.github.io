@@ -450,11 +450,14 @@ p {
 
 .hint-phrase {
   display: inline-block;
-  min-width: 7.5ch;
   filter: blur(6px);
   opacity: 0.55;
   user-select: none;
   transition: filter 0.18s ease, opacity 0.18s ease;
+}
+
+.hint-card-phrase {
+  min-width: 7.5ch;
 }
 
 .hint-card.is-revealed {
